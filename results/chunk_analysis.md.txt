@@ -1,0 +1,49 @@
+# Chunk Position Analysis — Pareshkumar vs State of Gujarat
+
+## Document Stats
+- Total characters: 129,506
+- Total words: 21,941
+- Pages: 58
+
+## Findings
+
+| Chunk Position | Characters Seen | Summary Quality | Issue |
+|---|---|---|---|
+| 0-20% | 0-25,901 | Very Poor | Only headers and citations |
+| 20-40% | 25,901-51,802 | Poor | Legislative background only |
+| 40-70% | 51,802-90,654 | Moderate | Partial legal arguments |
+| 85-100% | 110,080-129,506 | Best | Actual judgment reasoning |
+
+## Chunk Outputs
+
+### Chunk at 0-20%
+**Preview:** "Pareshkumar Jaykarbhai Brahmbhatt vs State Of Gujarat..."
+**Summary:** Just copied case name and citations. No legal content.
+
+### Chunk at 20-40%
+**Preview:** "The anti-social elements adulterate liquor..."
+**Summary:** Captured legislative background about Laththa liquor
+but missed the actual legal dispute.
+
+### Chunk at 40-70%
+**Preview:** "Section 5 Cr.P.C. deals with the saving clause..."
+**Summary:** Captured special law vs general law argument partially.
+
+### Chunk at 85-100%
+**Preview:** "Saving of inherent powers of High Court..."
+**Summary:** Best result — captured Section 482 CrPC, High Court
+jurisdiction, Supreme Court precedent from West Bengal vs Sujit
+Kumar Rana.
+
+## What a Correct Summary Should Contain
+1. Vehicle seized for carrying liquor exceeding 10 litres
+2. Owner applied for interim release under Section 451 CrPC
+3. Magistrate and Sessions Court rejected the application
+4. Section 98(2) Gujarat Prohibition Act overrides CrPC
+5. Special law prevails over general law
+6. Vehicle cannot be released until final judgment
+7. All applications rejected
+
+## Conclusion
+Naive positional chunking is insufficient for Indian legal documents.
+Structure-Aware Chunking needed to identify rhetorical sections.
